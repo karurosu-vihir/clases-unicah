@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+span{
+    display: none;
+}
+
+body{
+    background-image: url("https://www.unicah.edu/FlujogramasWeb/imgs/fondo3.jpg");
+    background-attachment: fixed;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+header h1{
+    font-weight: lighter;
+    color: darkblue;
+    font-size: 50px;
+    text-align: center;
+}
+
+main{
+    width: 100%;
+    padding: 0 10%;
+}
+
+.guia{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.guia h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.guiacontainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+
+.guiaclases{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.guiaclases h3{
+    font-size: 30px;
+}
+
+.guiacolor{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.guiacolor div{
+    width: 32px;
+    height: 32px;
+}
+
+
+.flujograma{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.periodo{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    padding: 50px 0;
+    border: 2px solid whitesmoke;
+    gap: 10px;
+}
+
+.numeral{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkblue;
+    font-size: 25px;
+}
+
+.clase_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,247px);
+    gap: 20px;
+}
+
+.clase{
+    border: 1px solid black;
+    width: 247px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: blue;
+    display: flex;
+    align-items: flex-end;
+}
+
+.info{
+    height: min-content;
+    background-color: white;
+    width: 100%;
+    height: 55px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    main{
+        padding: 0;
+    }
+    .guiacontainer{
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+}
